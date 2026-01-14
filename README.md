@@ -38,17 +38,20 @@ src/
 ### Installation
 
 1. Clone the repository:
+
 ```bash
 git clone <repository-url>
 cd personal-finance-dashboard-v2
 ```
 
 2. Install dependencies:
+
 ```bash
 npm install
 ```
 
 3. Create a `.env` file based on `.env.example`:
+
 ```bash
 cp .env.example .env
 ```
@@ -58,6 +61,7 @@ cp .env.example .env
 ### Development
 
 Start the development server:
+
 ```bash
 npm run dev
 ```
@@ -67,11 +71,13 @@ The app will be available at `http://localhost:5173`
 ### Build
 
 Build for production:
+
 ```bash
 npm run build
 ```
 
 Preview the production build:
+
 ```bash
 npm run preview
 ```
@@ -92,6 +98,7 @@ npm run preview
 ### Expected Sheet Format
 
 Your Google Sheet should have the following columns:
+
 - **Date**: Transaction date (YYYY-MM-DD)
 - **Type**: "Income" or "Expense"
 - **Category**: Transaction category
@@ -121,37 +128,3 @@ Edit the Tailwind configuration in `tailwind.config.js` to customize colors, fon
 ### Data Processing
 
 Extend the utilities in `src/utils/dataProcessing.ts` to add custom calculations or data transformations.
-
-## Performance Tips
-
-- Use React.memo() for expensive chart components
-- Implement virtualization for long transaction lists
-- Cache API responses to reduce calls
-- Lazy load components for better initial load time
-
-## Contributing
-
-Contributions are welcome! Please follow these guidelines:
-
-1. Create a feature branch
-2. Make your changes
-3. Test thoroughly
-4. Submit a pull request
-
-## License
-
-This project is open source and available under the MIT License.
-
-## Support
-
-For issues and questions, please open an issue on GitHub.
-
-## Roadmap
-
-- [ ] Add chart library integration (Recharts or Chart.js)
-- [ ] Implement Google Sheets data fetching
-- [ ] Add transaction add/edit modals
-- [ ] Export to CSV functionality
-- [ ] Budget tracking and alerts
-- [ ] Mobile app version
-- [ ] Multi-user support
